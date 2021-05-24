@@ -4,167 +4,64 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="#FAFAF5"
+    tools:ignore="ExtraText">
 
 
-    <ImageButton
-        android:id="@+id/apple"
-        android:layout_width="93dp"
-        android:layout_height="91dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="62dp"
-        android:layout_marginEnd="41dp"
-        android:layout_marginRight="41dp"
-        android:scaleType="fitCenter"
-        app:layout_constraintEnd_toStartOf="@+id/banana"
-        app:layout_constraintStart_toStartOf="parent"
+    <TextView
+        android:id="@+id/textViewMessage"
+        android:layout_width="262dp"
+        android:layout_height="119dp"
+        android:fontFamily="cursive"
+        android:gravity="center"
+        android:text="Racook"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="#A38568"
+        android:textColorLink="#C19D74"
+        android:textSize="80dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/apple01" />
-
-    <ImageButton
-        android:id="@+id/banana"
-        android:layout_width="93dp"
-        android:layout_height="91dp"
-        android:layout_marginStart="100dp"
-        android:layout_marginLeft="100dp"
-        android:layout_marginTop="62dp"
-        android:scaleType="fitCenter"
-        app:layout_constraintStart_toEndOf="@+id/apple"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/banana_fusa" />
-
-    <ImageButton
-        android:id="@+id/ninjin"
-        android:layout_width="93dp"
-        android:layout_height="91dp"
-        android:layout_marginStart="100dp"
-        android:layout_marginLeft="100dp"
-        android:layout_marginTop="100dp"
-        android:scaleType="fitCenter"
-        app:layout_constraintStart_toEndOf="@+id/retasu"
-        app:layout_constraintTop_toBottomOf="@+id/banana"
-        app:srcCompat="@drawable/ninjin" />
-
-    <ImageButton
-        android:id="@+id/retasu"
-        android:layout_width="93dp"
-        android:layout_height="91dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="100dp"
-        android:scaleType="fitCenter"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/apple"
-        app:srcCompat="@drawable/retasu" />
-
-    <ImageButton
-        android:id="@+id/torimomo"
-        android:layout_width="93dp"
-        android:layout_height="91dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="100dp"
-        android:scaleType="fitCenter"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/retasu"
-        app:srcCompat="@drawable/torimomo" />
-
-    <ImageButton
-        android:id="@+id/sake"
-        android:layout_width="93dp"
-        android:layout_height="91dp"
-        android:layout_marginStart="100dp"
-        android:layout_marginLeft="100dp"
-        android:layout_marginTop="100dp"
-        android:scaleType="fitCenter"
-        app:layout_constraintStart_toEndOf="@+id/torimomo"
-        app:layout_constraintTop_toBottomOf="@+id/ninjin"
-        app:srcCompat="@drawable/sake" />
+        app:layout_constraintVertical_bias="0.443" />
 
     <Button
-        android:id="@+id/appleBuy"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:text="購入"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/apple" />
-
-    <TextView
-        android:id="@+id/textF1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="240dp"
-        android:layout_marginLeft="240dp"
-        android:layout_marginTop="26dp"
-        android:layout_marginBottom="17dp"
-        android:text="TextView"
-        app:layout_constraintBottom_toTopOf="@+id/apple"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
-
-    <TextView
-        android:id="@+id/textF2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginLeft="32dp"
+        android:id="@+id/button"
+        android:layout_width="120dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="158dp"
+        android:layout_marginLeft="158dp"
         android:layout_marginTop="40dp"
-        android:text="TextView"
+        android:layout_marginEnd="159dp"
+        android:layout_marginRight="159dp"
+
+        android:fontFamily="serif"
+        android:text="こちら"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:backgroundTint="#605849"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewMessage"
+        app:layout_constraintVertical_bias="0.0" />
 
-    <Button
-        android:id="@+id/bananaBuy"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="100dp"
-        android:layout_marginLeft="100dp"
-        android:text="購入"
-        app:layout_constraintStart_toEndOf="@+id/appleBuy"
-        app:layout_constraintTop_toBottomOf="@+id/banana" />
-
-    <Button
-        android:id="@+id/retasuBuy"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:text="購入"
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="131dp"
+        android:layout_height="104dp"
+        android:layout_marginStart="125dp"
+        android:layout_marginLeft="125dp"
+        android:layout_marginTop="201dp"
+        android:layout_marginEnd="137dp"
+        android:layout_marginRight="137dp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewMessage"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/retasu" />
-
-    <Button
-        android:id="@+id/ninjinBuy"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="100dp"
-        android:layout_marginLeft="100dp"
-        android:text="購入"
-        app:layout_constraintStart_toEndOf="@+id/retasuBuy"
-        app:layout_constraintTop_toBottomOf="@+id/ninjin" />
-
-    <Button
-        android:id="@+id/torimomoBuy"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:text="購入"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/torimomo" />
-
-    <Button
-        android:id="@+id/sakeBuy"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="100dp"
-        android:layout_marginLeft="100dp"
-        android:text="購入"
-        app:layout_constraintStart_toEndOf="@+id/torimomoBuy"
-        app:layout_constraintTop_toBottomOf="@+id/sake" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/boushidayo" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
