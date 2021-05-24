@@ -7,51 +7,164 @@
     tools:context=".MainActivity">
 
 
-    <TextView
-        android:id="@+id/textView1"
-        android:layout_width="370dp"
-        android:layout_height="99dp"
-        android:text="スーパーマーケット様アンケート閲覧アプリ"
-        android:textSize="34sp"
-
-        app:layout_constraintBottom_toBottomOf="parent"
-
-        app:layout_constraintHorizontal_bias="0.695"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+    <ImageButton
+        android:id="@+id/apple"
+        android:layout_width="93dp"
+        android:layout_height="91dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="62dp"
+        android:layout_marginEnd="41dp"
+        android:layout_marginRight="41dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toStartOf="@+id/banana"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.408" />
+        app:srcCompat="@drawable/apple01" />
+
+    <ImageButton
+        android:id="@+id/banana"
+        android:layout_width="93dp"
+        android:layout_height="91dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="62dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toEndOf="@+id/apple"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/banana_fusa" />
+
+    <ImageButton
+        android:id="@+id/ninjin"
+        android:layout_width="93dp"
+        android:layout_height="91dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="100dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toEndOf="@+id/retasu"
+        app:layout_constraintTop_toBottomOf="@+id/banana"
+        app:srcCompat="@drawable/ninjin" />
+
+    <ImageButton
+        android:id="@+id/retasu"
+        android:layout_width="93dp"
+        android:layout_height="91dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="100dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/apple"
+        app:srcCompat="@drawable/retasu" />
+
+    <ImageButton
+        android:id="@+id/torimomo"
+        android:layout_width="93dp"
+        android:layout_height="91dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="100dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/retasu"
+        app:srcCompat="@drawable/torimomo" />
+
+    <ImageButton
+        android:id="@+id/sake"
+        android:layout_width="93dp"
+        android:layout_height="91dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="100dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toEndOf="@+id/torimomo"
+        app:layout_constraintTop_toBottomOf="@+id/ninjin"
+        app:srcCompat="@drawable/sake" />
 
     <Button
-        android:id="@+id/button"
-        android:layout_width="match_parent"
-        android:layout_height="101dp"
-        android:layout_marginTop="45dp"
-        android:layout_marginBottom="208dp"
-        android:text="アンケート閲覧"
-        android:textColor="#595858"
-        android:textSize="24sp"
-        app:backgroundTint="#FFFFFF"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        android:id="@+id/appleBuy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:text="購入"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView1" />
+        app:layout_constraintTop_toBottomOf="@+id/apple" />
+
+    <TextView
+        android:id="@+id/textF1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="240dp"
+        android:layout_marginLeft="240dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginBottom="17dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/apple"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textF2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="40dp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button2"
-        android:layout_width="match_parent"
-        android:layout_height="101dp"
-        android:layout_marginTop="15dp"
-        android:layout_marginBottom="92dp"
-        android:text="ランキング閲覧"
-        android:textColor="#595858"
-        android:textSize="24sp"
-        app:backgroundTint="#FFFFFF"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        android:id="@+id/bananaBuy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginLeft="100dp"
+        android:text="購入"
+        app:layout_constraintStart_toEndOf="@+id/appleBuy"
+        app:layout_constraintTop_toBottomOf="@+id/banana" />
+
+    <Button
+        android:id="@+id/retasuBuy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:text="購入"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button" />
+        app:layout_constraintTop_toBottomOf="@+id/retasu" />
+
+    <Button
+        android:id="@+id/ninjinBuy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginLeft="100dp"
+        android:text="購入"
+        app:layout_constraintStart_toEndOf="@+id/retasuBuy"
+        app:layout_constraintTop_toBottomOf="@+id/ninjin" />
+
+    <Button
+        android:id="@+id/torimomoBuy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:text="購入"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/torimomo" />
+
+    <Button
+        android:id="@+id/sakeBuy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginLeft="100dp"
+        android:text="購入"
+        app:layout_constraintStart_toEndOf="@+id/torimomoBuy"
+        app:layout_constraintTop_toBottomOf="@+id/sake" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
