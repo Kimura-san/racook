@@ -4,64 +4,54 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:background="#FAFAF5"
-    tools:ignore="ExtraText">
+    tools:context=".MainActivity">
 
 
     <TextView
-        android:id="@+id/textViewMessage"
-        android:layout_width="262dp"
-        android:layout_height="119dp"
-        android:fontFamily="cursive"
-        android:gravity="center"
-        android:text="Racook"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-        android:textColor="#A38568"
-        android:textColorLink="#C19D74"
-        android:textSize="80dp"
-        android:textStyle="bold"
+        android:id="@+id/textView1"
+        android:layout_width="370dp"
+        android:layout_height="99dp"
+        android:text="スーパーマーケット様アンケート閲覧アプリ"
+        android:textSize="34sp"
+
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
+
+        app:layout_constraintHorizontal_bias="0.695"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.443" />
+        app:layout_constraintVertical_bias="0.408" />
 
     <Button
         android:id="@+id/button"
-        android:layout_width="120dp"
-        android:layout_height="63dp"
-        android:layout_marginStart="158dp"
-        android:layout_marginLeft="158dp"
-        android:layout_marginTop="40dp"
-        android:layout_marginEnd="159dp"
-        android:layout_marginRight="159dp"
-
-        android:fontFamily="serif"
-        android:text="こちら"
+        android:layout_width="match_parent"
+        android:layout_height="101dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginBottom="208dp"
+        android:text="アンケート閲覧"
+        android:textColor="#595858"
         android:textSize="24sp"
-        android:textStyle="bold"
-        app:backgroundTint="#605849"
+        app:backgroundTint="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewMessage"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/textView1" />
 
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="131dp"
-        android:layout_height="104dp"
-        android:layout_marginStart="125dp"
-        android:layout_marginLeft="125dp"
-        android:layout_marginTop="201dp"
-        android:layout_marginEnd="137dp"
-        android:layout_marginRight="137dp"
-        app:layout_constraintBottom_toTopOf="@+id/textViewMessage"
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="101dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="92dp"
+        android:text="ランキング閲覧"
+        android:textColor="#595858"
+        android:textSize="24sp"
+        app:backgroundTint="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/boushidayo" />
+        app:layout_constraintTop_toBottomOf="@+id/button" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
