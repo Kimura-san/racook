@@ -1,0 +1,157 @@
+package com.sample.racook;
+
+import androidx.annotation.DrawableRes;
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.ImageButton;
+import android.widget.ImageView;
+
+import com.sample.racook.MainActivity;
+
+public class Chinese extends AppCompatActivity {
+
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_chinese);
+
+        final Button button11 = findViewById(R.id.category1);
+        //ボタンが押されたときの動作
+        button11.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v){
+                Intent intent = new Intent(Chinese.this, Japanese.class);
+                startActivity(intent);
+            }
+        });
+
+        final Button button12 = findViewById(R.id.category2);
+        //ボタンが押されたときの動作
+        button12.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v){
+                Intent intent = new Intent(Chinese.this, Western.class);
+                startActivity(intent);
+            }
+        });
+
+        final Button button13 = findViewById(R.id.category3);
+        //ボタンが押されたときの動作
+        button13.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v){
+                Intent intent = new Intent(Chinese.this, Chinese.class);
+                startActivity(intent);
+            }
+        });
+
+        final Button button14 = findViewById(R.id.category4);
+        //ボタンが押されたときの動作
+        button14.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v){
+                Intent intent = new Intent(Chinese.this, Dessert.class);
+                startActivity(intent);
+            }
+        });
+
+        //変数宣言
+
+        //int iconId = getResources().getIdentifier("food", "drawable", getPackageName());
+
+        final Button button1 = findViewById(R.id.toMain1);
+        //ボタンが押されたときの動作
+        button1.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v){
+                Intent intent = new Intent(Chinese.this, Main_mainActivity.class);
+                startActivity(intent);
+            }
+        });
+
+
+        final ImageButton recipe1 = findViewById(R.id.recipe1);
+        recipe1.setImageResource(R.drawable.food_hiyashichuka);
+        //ボタンが押されたときの動作
+        recipe1.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v){
+                Intent intent = new Intent(Chinese.this,Recipe_hiyashichuka.class);
+                int viewData = 1; //レシピ画面において表示する画像の番号
+                intent.putExtra("POSITION", viewData);
+                intent.putExtra("FOOD_IMAGE", R.drawable.food_hiyashichuka);
+                startActivity(intent);
+            }
+        });
+
+
+        final ImageButton recipe2 = findViewById(R.id.recipe2);
+        recipe2.setImageResource(R.drawable.food_subuta);
+        //ボタンが押されたときの動作
+        recipe2.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v){
+                Intent intent = new Intent(Chinese.this,Recipe_subuta.class);
+                int viewData = 2; //レシピ画面において表示する画像の番号
+                intent.putExtra("POSITION", viewData);
+                intent.putExtra("FOOD_IMAGE", R.drawable.food_subuta);
+                startActivity(intent);
+            }
+        });
+
+
+
+        final ImageButton recipe3 = findViewById(R.id.recipe3);
+        recipe3.setImageResource(R.drawable.food_mabo_doufu);
+        //ボタンが押されたときの動作
+        recipe3.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v){
+                Intent intent = new Intent(Chinese.this,Recipe_mabo_doufu.class);
+                int viewData = 3; //レシピ画面において表示する画像の番号
+                intent.putExtra("POSITION", viewData);
+                intent.putExtra("FOOD_IMAGE", R.drawable.food_mabo_doufu);
+                startActivity(intent);
+            }
+        });
+
+
+        final ImageButton recipe4 = findViewById(R.id.recipe4);
+        recipe4.setImageResource(R.drawable.food_hoikoro);
+        //ボタンが押されたときの動作
+        recipe4.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v){
+                Intent intent = new Intent(Chinese.this,Recipe_hoikoro.class);
+                int viewData = 4; //レシピ画面において表示する画像の番号
+                intent.putExtra("POSITION", viewData);
+                intent.putExtra("FOOD_IMAGE", R.drawable.food_hoikoro);
+                startActivity(intent);
+            }
+        });
+
+
+        final ImageButton recipe5 = findViewById(R.id.recipe5);
+        recipe5.setImageResource(R.drawable.food_tantanmen);
+        //ボタンが押されたときの動作
+        recipe5.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v){
+                Intent intent = new Intent(Chinese.this,Recipe_tantanmen.class);
+                int viewData = 5; //レシピ画面において表示する画像の番号
+                intent.putExtra("POSITION", viewData);
+                intent.putExtra("FOOD_IMAGE", R.drawable.food_tantanmen);
+                startActivity(intent);
+            }
+        });
+
+
+        final ImageButton recipe6 = findViewById(R.id.recipe6);
+        recipe6.setImageResource(R.drawable.food_gyouza);
+        //ボタンが押されたときの動作
+        recipe6.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v){
+                Intent intent = new Intent(Chinese.this,Recipe_gyouza.class);
+                int viewData = 6; //レシピ画面において表示する画像の番号
+                intent.putExtra("POSITION", viewData);
+                intent.putExtra("FOOD_IMAGE", R.drawable.food_gyouza);
+                startActivity(intent);
+            }
+        });
+    }
+}
